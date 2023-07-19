@@ -34,12 +34,12 @@ function addNewLaunch(launch){
         }));
     }
     
-    function existsLaunchWithId(launchId){
-        console.log("Checking launchId:", launchId);
-        const exists = launches.has(launchId);
-        console.log("Launch ID exists:", exists);
-        return exists;
-    }
+function existsLaunchWithId(launchId){
+    console.log("Checking launchId:", launchId);
+    const exists = launches.has(launchId);
+    console.log("Launch ID exists:", exists);
+    return exists;
+}
 
 function abortLaunchById(launchId){
     const aborted = launches.get(launchId);
